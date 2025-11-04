@@ -34,6 +34,17 @@
     width: 100%;
     height: auto;
     object-fit: contain;
+
+  .pf img.link {
+  position: absolute;
+  width: 200px;
+  top: 80%;               /* 버튼 위치 조정 가능 */
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  z-index: 10;
+}
+
   }
 </style>
 </head>
@@ -46,7 +57,10 @@
   <div class="pf"><img src="006.png" /></div>
   <div class="pf"><img src="007.png" /></div>
   <div class="pf"><img src="008.png" /></div>
-  <div class="pf"><img src="009.png" /></div>
+  
+  <div class="pf">
+    <img src="009.png" /></div>
+    <img src="button.png" class="link" onclick="window.open('https://github.com', '_blank')" />
 
 <script>
   const pages = document.querySelectorAll('.pf');
