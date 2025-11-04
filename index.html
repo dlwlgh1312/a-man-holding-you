@@ -36,15 +36,14 @@
     object-fit: contain;
   }
 
-  /* 버튼 이미지 스타일 */
-  .pf img.link {
+  /* 버튼 이미지 */
+  .link {
     position: absolute;
     width: 200px;
-    top: 80%;               /* 버튼 위치 조정 가능 */
+    top: 80%;
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
-    z-index: 10;
   }
 </style>
 </head>
@@ -58,7 +57,7 @@
   <div class="pf"><img src="007.png" /></div>
   <div class="pf"><img src="008.png" /></div>
 
-  <!-- 마지막 장: 009.png + 버튼 -->
+  <!-- 마지막 장: 009.png와 버튼 같이 포함 -->
   <div class="pf">
     <img src="009.png" />
     <img src="button.png" class="link" onclick="window.open('https://github.com', '_blank')" />
@@ -93,6 +92,5 @@
     }
   });
 </script>
-
 </body>
 </html>
