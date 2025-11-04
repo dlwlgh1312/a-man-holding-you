@@ -37,15 +37,17 @@
   }
 
   /* 버튼 이미지 */
-  .link {
-    position: fixed;
-    width: 200px;
-    top: 60%;
-    left: 50%;
-    height: auto;
-    cursor: pointer;
-    z-index: 10;
-  }
+   img.link {
+  position: fixed;          /* ✅ 화면 기준으로 고정 */
+  bottom: 60px;             /* 화면 아래에서 60px 위 */
+  left: 50%;                /* 화면 중앙 기준 */
+  transform: translateX(-50%); /* 정확히 중앙 정렬 */
+  width: 20vw;              /* 화면 너비의 20% 크기 */
+  max-width: 350px;         /* 너무 커지지 않게 제한 */
+  height: auto;             /* 비율 유지 */
+  cursor: pointer;
+  z-index: 10;              /* 다른 이미지보다 위 */
+}
 
 </style>
 </head>
