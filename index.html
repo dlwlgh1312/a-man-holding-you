@@ -38,13 +38,15 @@
 
   /* 버튼 이미지 */
   .link {
-    position: absolute;
-    width: 75px;
-    top: 80%;
-    left: 50%;
-    transform: translateX(-50%);
+    position: fixed;         /* 또는 absolute — 필요에 따라 선택 */
+    bottom: 40px;            /* 화면 아래에서 40px */
+    right: 40px;             /* 화면 오른쪽에서 40px */
+    width: 200px;            /* 버튼 크기 */
+    height: auto;
     cursor: pointer;
+    z-index: 10;
   }
+
 </style>
 </head>
 <body>
