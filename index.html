@@ -44,7 +44,9 @@
   transform: translateX(-50%); /* 정확히 중앙 정렬 */
   width: 20vw;              /* 화면 너비의 20% 크기 */
   max-width: 350px;         /* 너무 커지지 않게 제한 */
-  height: auto;             /* 비율 유지 */
+  height: auto;
+  transform: translate(-50%, -50%); /* ✅ 중심 기준으로 위치 보정 */
+/* 비율 유지 */
   cursor: pointer;
   z-index: 10;              /* 다른 이미지보다 위 */
 }
